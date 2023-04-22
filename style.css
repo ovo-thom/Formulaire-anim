@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /* background: rgba(190, 199, 199, 0.303); */
+    background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+height: 100vh;
+}
+
+form{
+    margin-top: 20px;
+    padding: 40px 60px;
+    background-color: #fff;
+    min-width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form h1{
+    /* text-align: center; */
+    color: rgba(54, 10, 54, 0.658);
+    position: relative;
+}
+
+form h1::after{
+    content: "";
+    height: 1px;
+    background: rgba(54, 10, 54, 0.658);
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    animation: h1anim 10s ease-in-out infinite;
+}
+
+@keyframes h1anim{
+     100% {
+        transform: translateX(-50%) scaleX(1);
+     }
+}
+
+.social-media{
+    padding: 5px;
+}
+
+.social-media i{
+    border: 1px solid rgba(69, 68, 68, 0.559);
+    padding: 7px;
+    border-radius: 100%;
+    margin-left: 10px;
+    font-size: 14px;
+    width: 15px;
+    color: rgba(11, 83, 91, 0.875);
+    text-align: center;
+}
+
+form h4{
+    font-size: 0.8rem;
+    margin-top: 30px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input[type='email'], input[type='password']{
+    padding: 15px;
+    border: none;
+    background: rgba(78, 166, 209, 0.155);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+p {
+    color: #807d7dc2;
+    
+}
+
+p span{
+    color: rgba(54, 10, 54, 0.658);
+    font-weight: bold;
+}
+
+p span.new{
+    cursor: pointer;
+}
+
+button{
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(78, 166, 209, 0.155);
+    background:  rgba(54, 10, 54, 0.658);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+button:hover{
+    background: rgba(78, 166, 209, 0.155);
+    color: rgba(54, 10, 54, 0.658);
+    border: 1px solid  rgba(54, 10, 54, 0.658)  ;
+}
